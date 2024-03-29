@@ -16,7 +16,8 @@ setup(
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*.xacro')),   
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*.gazebo')),
         (os.path.join('share', package_name, 'worlds'), glob('worlds/*.world')),
-        (os.path.join('share', package_name, 'models'), glob('models/**')),
+        (os.path.join('share', package_name, 'models/steel_wall'), glob('models/steel_wall/**')),
+        (os.path.join('share', package_name, 'models/tank_structure'), glob('models/tank_structure/**')),
         (os.path.join('share', package_name, 'config_simul'), glob('config_simul/*.rviz')),
         (os.path.join('share', package_name, 'scripts'), glob('scripts/*.py')),
     
