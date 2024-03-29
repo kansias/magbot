@@ -1,5 +1,7 @@
 # ROS2 Magnetic Wall Climbing Robot
 
+![capture_gazebo](https://github.com/kansias/magbot/assets/17667161/29ac1da5-0cab-4f26-baf6-76f08a78b73e)
+
 This repository contains the code for a wall climbing robot that uses magnetic wheels to climb walls. The robot is controlled using ROS2 and is capable of climbing walls with a variety of surfaces. The robot is equipped with a camera and a LiDAR sensor for navigation and obstacle avoidance.
 
 ## 1. Environment Setup
@@ -16,7 +18,7 @@ in terminal( zsh or bash):
 
 ```bash
 cd $(your workspace)/src
-git clone
+git clone https://github.com/kansias/magbot.git
 cd ..
 colcon build
 
@@ -74,4 +76,8 @@ Open a new terminal and run the following command:
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
-You can now use the keyboard to control the robot. The following keys can be used to control the robot:
+You can now use the keyboard to control the robot. The following keys can be used to control the robot
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
