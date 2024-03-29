@@ -12,12 +12,23 @@ The robot is built using the following hardware components:
 - Ubuntu 22.04 LTS
 - ROS2 Humble
 
-The following software packages are required to run the code:
+### - ( Essential ) Plugin Installation
+
+This ROS2 package uses a custom Gazebo plugin to simulate the magnetic wheels of the robot. To install the plugin, run the following commands:
+
+```bash
+cd $(your workspace)
+git clone https://github.com/kansias/magnetic_wheel_gazebo_plugin.git
+```
+
+### - Package Installation
+
+Now you can install the package using the following commands:
 
 in terminal( zsh or bash):
 
 ```bash
-cd $(your workspace)/src
+cd $(your workspace)
 git clone https://github.com/kansias/magbot.git
 cd ..
 colcon build
