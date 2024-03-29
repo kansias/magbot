@@ -17,7 +17,7 @@ The robot is built using the following hardware components:
 This ROS2 package uses a custom Gazebo plugin to simulate the magnetic wheels of the robot. To install the plugin, run the following commands:
 
 ```bash
-cd $(your workspace)
+cd $(your workspace)/src
 git clone https://github.com/kansias/magnetic_wheel_gazebo_plugin.git
 ```
 
@@ -28,7 +28,7 @@ Now you can install the package using the following commands:
 in terminal( zsh or bash):
 
 ```bash
-cd $(your workspace)
+cd $(your workspace)/src
 git clone https://github.com/kansias/magbot.git
 cd ..
 colcon build
@@ -62,7 +62,7 @@ To launch the robot simulation, run the following command:
 ```bash
 cd $(your workspace)
 source install/setup.bash # or source install/setup.zsh
-ros2 launch magbot magbot.launch.py
+ros2 launch magbot magbot_simul.launch.py
 ```
 
 This will launch the Gazebo simulation with the robot model and the environment. And Rviz2 will be launched to visualize the robot's sensor data.
